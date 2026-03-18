@@ -24,7 +24,7 @@ Place your dataset in the specified directory and set the flags to process the d
 `format_dataset = True # Set to False after the first run to reuse .pkl files`
 
 ### 2. Tensorboard
-Monitor training logs in a separate terminal with: `tensorboard --logdir=./logs`*
+Monitor training logs in a separate terminal with: `tensorboard --logdir=./Qwen2.5-VL-3B-Intruct-Numismatic/logs`
 
 ### 3. Inference & Testing
 Once training is complete, update the `model_id` path to your saved checkpoint and set the flags to test mode:
@@ -33,4 +33,4 @@ Once training is complete, update the `model_id` path to your saved checkpoint a
 
 `format_dataset = False`
 
-The script will iterate through your test set, display the item image, print the generated auction description, and wait for you to press `Space` before moving to the next item.
+The script will iterate through your test set, display the item image(s), print the generated auction description, and wait for you to press `Space` before moving to the next item.
